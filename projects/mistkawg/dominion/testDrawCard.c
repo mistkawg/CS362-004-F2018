@@ -3,7 +3,6 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
-#include <math.c>
 #include "rngs.h"
 
 #define DEBUG 0
