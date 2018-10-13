@@ -70,8 +70,6 @@ int main () {
 
   printf ("ALL TESTS OK\n");
 
-  exit(0);
-
   printf ("SIMPLE FIXED TESTS.\n");
   for (p = 0; p < 2; p++) {
     for (deckCount = 0; deckCount < 5; deckCount++) {
