@@ -13,7 +13,7 @@ int checkDrawCard(int p, struct gameState *post) {
 }
 
 int main () {
-
+/*
   int i, n, p; //, r, deckCount, discardCount, handCount;
 
   int k[10] = {adventurer, council_room, feast, gardens, mine,
@@ -35,7 +35,7 @@ int main () {
     p = floor(Random() * 1000);
     checkDrawCard(p, &G);
   }
-
+*/
   printf ("ALL TESTS OK\n");
 
   return 0;
