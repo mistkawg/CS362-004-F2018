@@ -131,7 +131,7 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 //refactored cards
 int cardAdventurer(struct gameState *state, int currentPlayer);
 int cardSmithy(struct gameState *state, int handPos, int currentPlayer);
-int cardVillage(struct gamestate *state, int currentPlayer, int handPos);
+int cardVillage(struct gameState *state, int currentPlayer, int handPos);
 int cardFeast(struct gameState *state, int currentPlayer, int choice1, int handPos);
 int cardCouncil_Room(struct gameState *state, int currentPlayer, int handPos);
 
