@@ -1,6 +1,6 @@
 CFLAGS= -Wall -fpic -coverage -lm -std=c99
 
-rngs.o: rngs.h rngs.c
+rngs.o: rngs.c
 	gcc -c rngs.c -g  $(CFLAGS)
 
 dominion.o: dominion.h dominion.c rngs.o
@@ -36,4 +36,4 @@ player: player.c interface.o
 all: playdom player
 
 clean:
-	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe
+	rm -f *.o playdom.exe playdom player player.exe  *.gcov *.gcda *.gcno *.so *.out testDrawCard testDrawCard.exe badTestDrawCard
