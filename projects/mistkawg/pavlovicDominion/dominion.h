@@ -128,4 +128,6 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
 
+//added for sake of testing, not sure how he managed to test the function without referencing in .h
+int _adventurer(int drawntreasure, struct gameState *state, int currentPlayer, int cardDrawn, int *temphand, int z);
 #endif
