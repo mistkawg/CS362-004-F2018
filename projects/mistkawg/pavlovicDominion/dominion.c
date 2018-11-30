@@ -645,7 +645,7 @@ int _smithy(int currentPlayer, struct gameState *state, int handPos) {
 	* bug 1: loop will run one too few, drawing 2 cards instead of the intended 3
 	***/
     //+3 Cards
-    for (i = 1; i < 3; i++) {
+    for (i = 0; i < 3; i++) {
 	// for (i = 0; i < 3; i++) {
         drawCard(currentPlayer, state);
     }
@@ -661,7 +661,7 @@ int _adventurer(int drawntreasure, struct gameState *state, int currentPlayer, i
 	/***
 	* bug 2: loop will run once extra (turned < to <= in while statement)
 	***/
-    while(drawntreasure<=2) {
+    while(drawntreasure < 2) {
 	// while(drawntreasure<2) {
         if (state->deckCount[currentPlayer] <1){ // if the deck is empty we need to shuffle discard and add to deck
             shuffle(currentPlayer, state);

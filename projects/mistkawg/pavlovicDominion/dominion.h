@@ -132,5 +132,5 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 int _adventurer(int drawntreasure, struct gameState *state, int currentPlayer, int cardDrawn, int *temphand, int z);
 
 //added for sake of testing, not sure how he managed to test the function without referencing in .h
-int _smithy(int drawntreasure, struct gameState *state, int currentPlayer, int cardDrawn, int *temphand, int z);
+int _smithy(int currentPlayer, struct gameState *state, int handPos);
 #endif

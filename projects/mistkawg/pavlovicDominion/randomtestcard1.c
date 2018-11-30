@@ -40,7 +40,7 @@ int main() {
         //new call
         int tempHand[MAX_HAND];
         //weird function call, passing variables that are used locally in adventurer and never again
-        _adventurer(0, game, player, 0, tempHand, 0);
+        _adventurer(player, game, 0);
 
         //check discard count after
         if(game->playedCardCount != (discardCount+1)) {
