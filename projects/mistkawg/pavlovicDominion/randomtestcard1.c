@@ -35,7 +35,12 @@ int main() {
         discardCount = game->playedCardCount;
 
         //simulating that the 0 hand position is the smithy card
-        cardSmithy(game, 0, player);
+        //my call: cardSmithy(game, 0, player);
+
+        //new call
+        int tempHand[MAX_HAND];
+        //weird function call, passing variables that are used locally in adventurer and never again
+        _adventurer(0, game, player, 0, tempHand, 0);
 
         //check discard count after
         if(game->playedCardCount != (discardCount+1)) {

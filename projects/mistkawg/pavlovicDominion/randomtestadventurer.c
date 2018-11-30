@@ -59,6 +59,7 @@ int main() {
         int tempHand[MAX_HAND];
         //weird function call, passing variables that are used locally in adventurer and never again
         _adventurer(0, game, player, 0, tempHand, 0);
+        
         //check if a coin was discarded
         for(j = 0; j < game->discardCount[player]; j++) {
             if(game->discard[player][j] == copper || game->discard[player][j] == silver

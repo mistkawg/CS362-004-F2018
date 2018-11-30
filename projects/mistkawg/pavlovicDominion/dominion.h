@@ -130,4 +130,7 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 
 //added for sake of testing, not sure how he managed to test the function without referencing in .h
 int _adventurer(int drawntreasure, struct gameState *state, int currentPlayer, int cardDrawn, int *temphand, int z);
+
+//added for sake of testing, not sure how he managed to test the function without referencing in .h
+int _smithy(int drawntreasure, struct gameState *state, int currentPlayer, int cardDrawn, int *temphand, int z);
 #endif
